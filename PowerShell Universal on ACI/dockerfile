@@ -1,0 +1,3 @@
+FROM ironmansoftware/universal:latest
+RUN ["pwsh", "-command", "Install-Module", "Az", "-Force"]
+ENTRYPOINT ["./home/Universal/Universal.Server"]
